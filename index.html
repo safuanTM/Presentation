@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Reproducible Pitch Presentation</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Reproducible Pitch Presentation">
+  <meta name="author" content="Safuan">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Reproducible Pitch Presentation</h1>
+    <h2>2nd part of Developing Data Product Assignment</h2>
+    <p>Safuan<br/>Telecommunication</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Self Introduction</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="assets/img/SAW.jpg" alt=""></p>
+
+<p>Hi! Nice to meet you. My name is Safuan, and I am working as an executive in a Malaysian&#39;s telecommuncation company.</p>
+
+<p>I an interested in database administrator, network administrator, clustered programming and data analytics.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Project</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>This current project is my submission for the Assignment of Developing Data Product, a Module in the Data Science series in CoursEra OnLine Education Learning.</p>
+
+<p>I&#39;ve prepared the plot of the rainfall for Kuala Lumpur International Airport (KLIA) from the years of 2008-2014, for the 1st part of this Data Science Module - using shiny apps and package. You can view this here using this link: <a href="https://sapong.shinyapps.io/Assignment/">https://sapong.shinyapps.io/Assignment/</a> </p>
+
+<p>Now for the 2nd half of the Assignment; the Reproducible Pitch Presentation, i will be using slidify apps &amp; package. </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Data Preparation.</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The data itself was taken from the the Malaysian&#39;s Government website data.gov.my, in the catalogue tab under the purview of Ministry of Science, Technology and Innovation. From there we can obtain the Kuala Lumpur International Airport (KLIA) Rainfall Index in the year 2008-2014, to view how much is the daily rainfall amount for a particular day. The data needs a bit of tidying up, whereby we have omitted the non-data portion (titles, notes, remarks) as well as replacing defective values with the number 0. We ended up with this tidy dataset.</p>
+
+<pre><code class="r">klia &lt;- read.csv(&quot;Rainfall_Wind_KLIA_2008_2014.csv&quot;)
+head(klia,4)
+</code></pre>
+
+<pre><code>##   Stnno Year Month Day Rainfall Day.mean.wind Solar.Radioation...MJm.2.
+## 1 48650 2008     1   1      0.0           2.9                     16.70
+## 2 48650 2008     1   2      0.0           2.5                     15.48
+## 3 48650 2008     1   3      0.0           2.6                      9.82
+## 4 48650 2008     1   4     14.4           1.9                     14.86
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Plotting the Result</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Finally, let&#39;s plot one instance of the rainfall for 2008 in the month of January: (remember you have have a full dataset view @ <a href="https://sapong.shinyapps.io/Assignment/">https://sapong.shinyapps.io/Assignment/</a>).</p>
+
+<p><img src="assets/fig/unnamed-chunk-3-1.png" alt="plot of chunk unnamed-chunk-3"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Self Introduction'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Project'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Data Preparation.'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Plotting the Result'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
